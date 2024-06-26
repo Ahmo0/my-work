@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+
+    <script src="script.js"></script>
+    <main>
+        <div class="container">
+            <div class="img"></div>
+            <div class="txt-wrapper">
+                <h1>Stay updated!</h1>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                <ul>
+                    <li>Product discovery and building what matters</li>
+                    <li>Measuring to ensure updates are a success</li>
+                    <li>And much more!</li>
+                </ul>
+                <form novalidate method="post" onsubmit="validateForm(event)"></form>
+                <label for="email address">Email address <span id="invalid-email">Valid email required</span></label>
+                <input type="email" required id="email-address" name="email-address" placeholder="email@company.com">
+                <button id="subscribe-btn" type="submit">Subscribe to monthly newsletter</button>
+
+
+
+
+            </div>
+
+        </div>
+
+ <!-- Success message start -->
+ <div class="success-msg">
+    <div class="wrapper">
+    <img src="img/icon-success.svg" alt="success icon">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <strong id="user-mail">ash@loremcompany.com</strong>. 
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+  </div>
+  <button id="dismiss-btn">Dismiss message</button>
+  </div>
+    <!-- Success message end -->
+  
+
+        
+    </main>
+</body>
+</html>
