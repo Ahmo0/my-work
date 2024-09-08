@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Comments Section</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="comments-container">
+        <!-- Comment by Amy Robson -->
+        <div class="comment">
+
+            <!-- Comment with Delete Button -->
+<div class="comment">
+    <!-- ... existing comment structure ... -->
+    <!-- <button class="delete-button">🗑️</button> -->
+</div>
+
+<!-- Confirmation Dialog -->
+<div id="confirmation-dialog" class="confirmation-dialog">
+    <div class="dialog-content">
+        <p>Are you sure you want to remove this comment? This action cannot be undone.</p>
+        <button id="cancel-button">NO, CANCEL</button>
+        <button id="confirm-button">YES, DELETE</button>
+    </div>
+</div>
+
+            <div class="comment-votes">
+                <button class="vote-up">+</button>
+                <span class="vote-count">12</span>
+                <button class="vote-down">-</button>
+                <button class="delete-button">🗑️</button>
+            </div>
+            <div class="comment-content">
+                <div class="comment-header">
+                    <img src="avatars/image-amyrobson.png" alt="Amy Robson's avatar">
+                    <span class="username">amyrobson</span>
+                    <span class="comment-time">1 month ago</span>
+                </div>
+                <p class="comment-text">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+                <button class="reply-button">Reply</button>
+            </div>
+        </div>
+
+        <!-- Comment by Max Blagun and Replies -->
+        <div class="comment">
+            <div class="comment-votes">
+                <button class="vote-up">+</button>
+                <span class="vote-count">5</span>
+                <button class="vote-down">-</button>
+            </div>
+            <div class="comment-content">
+                <div class="comment-header">
+                    <img src="avatars/image-maxblagun.png" alt="Max Blagun's avatar">
+                    <span class="username">maxblagun</span>
+                    <span class="comment-time">2 weeks ago</span>
+                </div>
+                <p class="comment-text">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</p>
+                <button class="reply-button">Reply</button>
+            </div>
+
+            <!-- Replies -->
+            <div class="replies">
+                <div class="comment reply">
+                    <div class="comment-votes">
+                        <button class="vote-up">+</button>
+                        <span class="vote-count">4</span>
+                        <button class="vote-down">-</button>
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <img src="avatars/image-ramsesmiron.png" alt="Ramses Miron's avatar">
+                            <span class="username">ramsesmiron</span>
+                            <span class="comment-time">1 week ago</span>
+                            <span class="replying-to">@maxblagun</span>
+                        </div>
+                        <p class="comment-text">If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</p>
+                        <button class="reply-button">Reply</button>
+                    </div>
+                </div>
+
+                <div class="comment reply">
+                    <div class="comment-votes">
+                        <button class="vote-up">+</button>
+                        <span class="vote-count">2</span>
+                        <button class="vote-down">-</button>
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <img src="avatars/image-juliusomo.png" alt="Juliusomo's avatar">
+                            <span class="username">juliusomo</span>
+                            <span class="comment-time">2 days ago</span>
+                            <span class="replying-to">@ramsesmiron</span>
+                        </div>
+                        <p class="comment-text">I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
+                        <button class="reply-button">Reply</button>
+                        <button class="edit-button">Edit</button>
+                        <button class="delete-button">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add a new comment section -->
+        <!-- <div class="add-comment">
+            <img src="avatars/image-juliusomo.png" alt="Your avatar">
+            <textarea placeholder="Add a comment..."></textarea>
+            <button class="send-button">SEND</button>
+        </div> -->
+        <!-- Add a new comment section -->
+<div class="add-comment">
+    <img src="avatars/image-juliusomo.png" alt="Your avatar">
+    <textarea id="new-comment-text" placeholder="Add a comment..."></textarea>
+    <button id="send-button" class="send-button">SEND</button>
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
